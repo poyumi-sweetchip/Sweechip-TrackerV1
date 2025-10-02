@@ -92,14 +92,15 @@
         };
 
         // Use environment variables for Firebase config and App ID
-        const firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyDYfl0TiMFHceE88GkHcl7XHDli-LSbArk",
   authDomain: "a037b08f.firebaseapp.com",
   projectId: "a037b08f",
   storageBucket: "a037b08f.firebasestorage.app",
   messagingSenderId: "485696187373",
-  appId: "1:485696187373:web:f9b40596c0d5eab5ae15e4",
-  measurementId: "G-QPJ29TZBKV"
+  appId: "485696187373:web:f9b40596c0d5eab5ae15e4"
+};
+const appId = firebaseConfig.projectId; // Automatically use your project ID
 
         // --- Firestore Collection Paths ---
         const DAILY_RECORDS_COLLECTION = `artifacts/${appId}/public/data/daily_records`;
@@ -2148,5 +2149,6 @@
 
 </body>
 </html>
+
 
 
